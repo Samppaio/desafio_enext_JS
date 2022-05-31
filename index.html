@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aplicação proposta pelo programa de capacitação Enext como desafio JS"
+    />
+    <title>Condição Climática Local Atual</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_container">
+        <h1>Condição Climática Local Atual</h1>
+      </div>
+    </header>
+    <section class="dashboard">
+      <div class="dashboard_container">
+        <div id="dashboard_content" class="dashboard_content">
+          <div id="temp_icon" class="temp_icon"></div>
+          <div id="info" class="info"></div>
+          <button type="button" onclick="handleSaveInfo()">Salvar</button>
+        </div>
+      </div>
+    </section>
+    <section class="savedInfo">
+      <div class="savedInfo_container">
+        <div class="savedInfo_title">
+          <h1>Condições Climáticas Salvas</h1>
+        </div>
+        <div class="savedInfo_table">
+          <table>
+            <thead>
+              <tr>
+                <th>Condição Climática</th>
+                <th>Temperatura</th>
+                <th>Descrição</th>
+                <th>Hora</th>
+                <th>Data</th>
+              </tr>
+            </thead>
+            <tbody id="savedInfo_list"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
